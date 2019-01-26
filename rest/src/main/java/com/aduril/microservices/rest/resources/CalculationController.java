@@ -6,10 +6,18 @@ import java.util.List;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.aduril.microservices.lib.model.Calculation;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
+/**
+ * Calculation controller
+ * @author Sai-Mac
+ *
+ */
+@RestController
+@RequestMapping("calculation")
 public class CalculationController {
 
 	private static final String PATTERN = "^-?+\\d+\\.?+\\d*$";
